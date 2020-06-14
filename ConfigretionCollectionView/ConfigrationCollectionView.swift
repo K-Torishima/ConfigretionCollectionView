@@ -10,8 +10,14 @@ import UIKit
 
 class ConfigrationCollectionView: NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    var items: [String] = ["aaa","bbb","ccc","ddd","eee","fff","ggg","hhh","iii","jjj","kkk",]
-
+//   初期値がある物ならこちらで定義するのもあり
+//    var items: [String] = ["aaa","bbb","ccc","ddd","eee","fff","ggg","hhh","iii","jjj","kkk",]
+    // こちらの方法もある
+    var items: Array<Int>
+    init(items: Array<Int>) {
+        self.items = items
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         items.count
     }
