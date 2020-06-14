@@ -31,8 +31,6 @@ class ViewController: UIViewController {
         self.configrationCollectionView = ConfigrationCollectionView(items: items)
         collectionView.delegate = configrationCollectionView
         collectionView.dataSource = configrationCollectionView
-
-
     }
 }
 
